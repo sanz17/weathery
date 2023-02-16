@@ -5,11 +5,13 @@ import Container from 'react-bootstrap/Container';
 import { Row, Col } from 'react-bootstrap';
 import TextField from '@mui/material/TextField';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
-import headerImg from '../assets/img/umbrella_small.png'
+import headerImg from '../assets/img/umbrella_small.png';
+import { useNavigate } from "react-router-dom";
 import 'animate.css'
 import TrackVisibility from 'react-on-screen';
 
 export const Banner = () => {
+    const ng=useNavigate()
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
@@ -92,7 +94,7 @@ export const Banner = () => {
                                     'fontSize':'30px',
                                     'marginLeft':'289px',
                                     'marginTop':'20px'   
-                                }} type='submit' onClick={() => console.log('connect')}>Search<ArrowRightCircle size={25} /></button>
+                                }} type='submit' onClick={() => ng('Cities')}>Search<ArrowRightCircle size={25} /></button>
                     </Col>
                     {/* <Col>
                         <h1 className="temp">23&#176;</h1>

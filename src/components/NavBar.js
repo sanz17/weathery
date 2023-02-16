@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { useNavigate } from "react-router-dom";
 
 const NavBar = () => {
+  const ng=useNavigate();
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
@@ -68,7 +70,7 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <span className="navbar-text">
-            <button style={{ 'color': 'black', 'fontSize': '35px', 'background': 'white' }} className="social-button" onClick={() => console.log('connect')}><span>{text}</span></button>
+            <button style={{ 'color': 'black', 'fontSize': '35px', 'background': 'white' }} className="social-button" onClick={() => ng('/')}><span>{text}</span></button>
           </span>
         </Navbar.Collapse>
       </Container>

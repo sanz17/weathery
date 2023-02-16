@@ -61,11 +61,23 @@ img {
 
 button {
   border: 0;
+  color: #020048;
   background-color: transparent;
+  /* margin-left: 300px; */
+
 }
 
-input:focus, textarea:focus, select:focus {
+/* input:focus, textarea:focus, select:focus {
   outline: none;
+} */
+
+input{
+  border: 0;
+  
+}
+input::placeholder{
+  color: #020048;
+  font-size: 50px;
 }
 
 @media (min-width:1700px) {

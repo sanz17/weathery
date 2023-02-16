@@ -1,6 +1,9 @@
+import * as React from 'react';
+import location from '../assets/img/location.png'
 import { useState, useEffect } from "react"
 import Container from 'react-bootstrap/Container';
 import { Row, Col } from 'react-bootstrap';
+import TextField from '@mui/material/TextField';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import headerImg from '../assets/img/umbrella_small.png'
 import 'animate.css'
@@ -51,15 +54,51 @@ export const Banner = () => {
         <section className="banner" id="home">
             <Container>
                 <Row className='align-items-center'>
-                    
+
                     <Col xs={12} md={6} xl={5}>
                         <TrackVisibility>
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                                    <img src={headerImg} alt="Header Img" />
+                                    <img style={{ 'width': '404px' }} src={headerImg} alt="Header Img" />
                                 </div>}
                         </TrackVisibility>
                     </Col>
+                    <Col style={
+                        {
+                            'border':'1px solid #084298',
+                            'padding':'100px',
+                            'borderRadius':'2%'
+                        }
+                    }>
+                        <input
+                            type="search"
+                            placeholder="Type a city"
+                            style={{
+                                'backgroundColor':'transparent',
+                                'border':'none',
+                                'width':'300px',
+                                'borderBottom':'1px solid rgba(32, 32, 32, 0.32)',
+                                'marginBottom':'20px',
+                                'height':'61px'
+                            }}
+                            // onChange={handleChange}
+                            // value={searchInput} 
+                            
+                            />
+                            {/* <img src={location} alt="Logo"/> */}
+                            <button style={
+                                {
+                                    'color':'black',
+                                    'fontSize':'30px',
+                                    'marginLeft':'289px',
+                                    'marginTop':'20px'   
+                                }} type='submit' onClick={() => console.log('connect')}>Search<ArrowRightCircle size={25} /></button>
+                    </Col>
+                    {/* <Col>
+                        <h1 className="temp">23&#176;</h1>
+                        <h1 className="wind">3km/hr</h1>
+                        <h1 className="humidity">85%</h1>
+                    </Col> */}
                 </Row>
             </Container>
         </section>

@@ -9,6 +9,8 @@ import headerImg from '../assets/img/umbrella_small.png';
 import { useNavigate } from "react-router-dom";
 import 'animate.css'
 import TrackVisibility from 'react-on-screen';
+import Form from 'react-bootstrap/Form';
+
 
 export const Banner = () => {
     const ng=useNavigate()
@@ -72,13 +74,14 @@ export const Banner = () => {
                             'borderRadius':'2%'
                         }
                     }>
+                        <Form className='locationInput'>
                         <input
-                            type="search"
-                            placeholder="Type a city"
+                            className='city'
+                            placeholder="Your city's weather"
                             style={{
                                 'backgroundColor':'transparent',
                                 'border':'none',
-                                'width':'300px',
+                                'width':'500px',
                                 'borderBottom':'1px solid rgba(32, 32, 32, 0.32)',
                                 'marginBottom':'20px',
                                 'height':'61px'
@@ -95,7 +98,9 @@ export const Banner = () => {
                                     'marginLeft':'289px',
                                     'marginTop':'20px'   
                                 }} type='submit' onClick={() => ng('Cities')}>Search<ArrowRightCircle size={25} /></button>
-                    </Col>
+                    
+                        </Form>
+                        </Col>
                     {/* <Col>
                         <h1 className="temp">23&#176;</h1>
                         <h1 className="wind">3km/hr</h1>

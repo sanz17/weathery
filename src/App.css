@@ -405,7 +405,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
-
+.cities{
+  background-image: url('./assets/img/cities.jpg');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;

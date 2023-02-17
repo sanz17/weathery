@@ -13,7 +13,7 @@ import Form from 'react-bootstrap/Form';
 
 
 export const Banner = () => {
-    const ng=useNavigate()
+    const ng = useNavigate()
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
@@ -69,38 +69,38 @@ export const Banner = () => {
                     </Col>
                     <Col style={
                         {
-                            'border':'1px solid #084298',
-                            'padding':'100px',
-                            'borderRadius':'2%'
+                            'border': '1px solid #084298',
+                            'padding': '100px',
+                            'borderRadius': '2%'
                         }
                     }>
                         <Form className='locationInput'>
-                        <input
-                            className='city'
-                            placeholder="Your city's weather"
-                            style={{
-                                'backgroundColor':'transparent',
-                                'border':'none',
-                                'width':'500px',
-                                'borderBottom':'1px solid rgba(32, 32, 32, 0.32)',
-                                'marginBottom':'20px',
-                                'height':'61px'
-                            }}
+                            <input
+                                className='city'
+                                placeholder="Your city's weather"
+                                style={{
+                                    'backgroundColor': 'transparent',
+                                    'border': 'none',
+                                    'width': '500px',
+                                    'borderBottom': '1px solid rgba(32, 32, 32, 0.32)',
+                                    'marginBottom': '20px',
+                                    'height': '61px'
+                                }}
                             // onChange={handleChange}
                             // value={searchInput} 
-                            
+
                             />
                             {/* <img src={location} alt="Logo"/> */}
                             <button style={
                                 {
-                                    'color':'black',
-                                    'fontSize':'30px',
-                                    'marginLeft':'289px',
-                                    'marginTop':'20px'   
+                                    'color': 'black',
+                                    'fontSize': '30px',
+                                    'marginLeft': '289px',
+                                    'marginTop': '20px'
                                 }} type='submit' onClick={() => ng('Cities')}>Search<ArrowRightCircle size={25} /></button>
-                    
+
                         </Form>
-                        </Col>
+                    </Col>
                     {/* <Col>
                         <h1 className="temp">23&#176;</h1>
                         <h1 className="wind">3km/hr</h1>
@@ -108,6 +108,29 @@ export const Banner = () => {
                     </Col> */}
                 </Row>
             </Container>
+            <p style={{
+                'color': '#595959',
+                'marginLeft': '650px',
+                'fontFamily': 'sans-serif',
+                'borderTop': '2px solid rgba(0, 0, 0, 0.05)'
+            }}>
+                Made with &#128149; by {' '}
+                <a
+                    style={{ 'textDecoration': 'none', 'color': '#595959', 'fontWeight': 'bolder' }}
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://github.com/sanz17">
+                    Sanz
+                </a>
+                . Made with {' '}
+                <a
+                    style={{ 'textDecoration': 'none', 'color': '#595959', 'fontWeight': 'bolder' }}
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://reactjs.org">
+                    ReactJS 2023
+                </a>
+            </p>
         </section>
     )
 }       

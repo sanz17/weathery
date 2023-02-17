@@ -7,7 +7,7 @@ import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 import ThermostatAutoIcon from '@mui/icons-material/ThermostatAuto';
 import NightsStayIcon from '@mui/icons-material/NightsStay';
 import AirIcon from '@mui/icons-material/Air';
-
+import Autosuggest from 'react-autosuggest';
 
 const API_KEY = '187669da64d04d299f365811231602';
 

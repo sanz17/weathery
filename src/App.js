@@ -17,29 +17,7 @@ function App() {
           <Route path="/Cities" element={<Cities />}></Route>
         </Routes>
       </BrowserRouter>
-      <p style={{
-        'color': '#595959',
-        'marginLeft':'650px',
-        'fontFamily': 'sans-serif',
-        'borderTop': '2px solid rgba(0, 0, 0, 0.05)'
-      }}>
-        Made with &#128149; by {' '}
-        <a
-          style={{ 'textDecoration': 'none', 'color': '#595959', 'fontWeight': 'bolder' }}
-          target="_blank"
-          rel="noreferrer"
-          href="https://github.com/sanz17">
-          Sanz
-        </a>
-        . Made with {' '}
-        <a
-          style={{ 'textDecoration': 'none', 'color': '#595959', 'fontWeight': 'bolder' }}
-          target="_blank"
-          rel="noreferrer"
-          href="https://reactjs.org">
-          ReactJS 2023
-        </a>
-      </p>
+      
     </>
   );
 }

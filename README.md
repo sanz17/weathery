@@ -12,7 +12,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - LocalStorage
 - Animations
-- Take geolocations
+- Take geolocations just like shown below
+<p align="center">
+  <img src="https://github.com/sanz17/weathery/blob/main/Screenshot%20from%202023-02-17%2010-13-44.png">
+</p>
 
 ## Getting Started
 
@@ -49,6 +52,13 @@ npm start
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+## A small demo
+
+<p align="center">
+  <img src="https://github.com/sanz17/weathery/blob/main/Screencast-from-17-02-23-102513.gif">
+</p>
+
 
 
 <p align="center">Made with ❤ by Sanz</p>

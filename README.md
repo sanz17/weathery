@@ -6,7 +6,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - ReactJS
 - [WeatherAPI](https://www.weatherapi.com/docs/)
-- 
+- Heroku CLI
+
+## Features
+
+- LocalStorage
+- Animations
+- Take geolocations
 
 ## Getting Started
 
@@ -23,10 +29,19 @@ git clone https://github.com/sanz17/weathery
 ```shell
 cd weathery
 ```
+- Run using VsCode.
+
+```shell
+code .
+```
 
 ## Available Scripts
 
 In the project directory, run:
+
+```shell
+npm install
+```
 
 ```shell
 npm start
